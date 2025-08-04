@@ -103,7 +103,16 @@
         <section id="kontakt" class="contact">
             <div class="container">
                 <h2>Lass uns dein Problem lösen.</h2>
-                <p>Kontaktiere mich einfach und unverbindlich. Ich helfe dir gerne weiter.</p>
+                <p>Kontaktiere mich einfach und unverbindlich per Formular, Telefon oder WhatsApp. Ich helfe dir gerne weiter.</p>
+
+                <form action="https://formspree.io/f/myzpdaro" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Dein Name" required>
+                        <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+                    </div>
+                    <textarea name="message" placeholder="Deine Nachricht an mich..." rows="6" required></textarea>
+                    <button type="submit" class="cta-button">Nachricht senden</button>
+                </form>
                 <div class="contact-info">
                     <p class="name">Florian Nitze</p>
                     <p class="phone">Telefon & WhatsApp: 05142 9879861</p>
@@ -117,7 +126,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Florian Nitze - FixIT PC-Service</p>
-            <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+            <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
         </div>
     </footer>
 
