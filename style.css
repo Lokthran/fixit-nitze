@@ -307,4 +307,55 @@ p {
 .contact-info .phone a:hover {
     text-decoration: underline;
 }
+
+    /* ============================================= */
+/* Stile für Über-Mich Sektion               */
+/* ============================================= */
+.about-me {
+    padding: 80px 0;
+    background-color: #ffffff; /* Weißer Hintergrund */
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-me-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Macht das Bild rund */
+    background-color: var(--light-color); /* Platzhalter-Farbe */
+    flex-shrink: 0;
+    /* Später, wenn du ein Bild hast, nutzt du: background-image: url('pfad/zu/deinem/bild.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me-text h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.about-me-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400; /* Etwas dickerer Text als Standard-p für bessere Lesbarkeit */
+}
+
+/* Anpassung für die Mobile Optimierung */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column; /* Bild und Text untereinander auf Mobilgeräten */
+    }
+    .about-me-image {
+        width: 200px; /* Bild etwas kleiner auf Mobilgeräten */
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .about-me-text h2 {
+        text-align: center; /* Überschrift zentriert auf Mobilgeräten */
+    }
+}
 }
