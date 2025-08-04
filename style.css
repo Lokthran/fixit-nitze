@@ -289,4 +289,22 @@ p {
     .form-group {
         flex-direction: column;
     }
+
+    /* Stile für die neuen Telefon- & WhatsApp-Links */
+.contact-info .phone {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin: 10px 0;
+    line-height: 1.8; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
+}
+
+.contact-info .phone a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info .phone a:hover {
+    text-decoration: underline;
+}
 }
